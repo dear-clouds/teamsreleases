@@ -1,0 +1,8 @@
+enabled: true
+select_pages:
+  - /teams
+taxonomy_filters:
+  - Category
+  - Type
+  - Genre
+  - Pays

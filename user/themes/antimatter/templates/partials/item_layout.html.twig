@@ -1,0 +1,43 @@
+<div class="list-item h-entry col s12 m6 l3">
+<div class="card sticky-action">
+
+    {% set header_image = page.header.header_image|defined(true) %}
+    {% set header_image_width  = page.header.header_image_width|defined(300) %}
+    {% set header_image_height = page.header.header_image_height|defined(120) %}
+    {% set header_image_file = page.header.header_image_file %}
+
+    <div class="card-image waves-effect waves-block waves-light activator" width="100%">
+    {% if header_image %}
+        {% if header_image_file %}
+            {% set header_image_media = page.media.images[header_image_file] %}
+        {% else %}
+            {% set header_image_media = page.media.images|first %}
+        {% endif %}
+        {{ header_image_media.cropZoom(header_image_width, header_image_height).classes('teams-image').html }}
+    {% endif %}
+    </div>
+
+
+    <div class="card-content">
+          <span class="card-title grey-text text-darken-4"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></a><i class="material-icons right activator waves-effect waves-block waves-light">label_outline</i></span>
+
+        </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">{{ page.title }}<i class="material-icons right">close</i></span>
+      <p>{% for category in page.taxonomy.category %}
+      <a href="{{ blog.url|rtrim('/') }}/category{{ config.system.param_sep }}{{ category }}">{{ category }}</a>
+      {% endfor %}</p>
+
+
+    <p>  <span class="tags">
+        {% for tag in page.taxonomy.tag %}
+        <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="chip">{{ tag }}</a>
+        {% endfor %}
+      </p>
+    </span>
+
+  </div>
+  <div class="card-action"><a href="{{ page.url }}" class="u-url">Voir la fiche</a> <a href="{{ page.header.site }}" class="u-url" target="_blank">Aller sur le site</a></div>
+
+</div>
+  </div>

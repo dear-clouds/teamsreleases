@@ -1,0 +1,9 @@
+name: Mio
+email: bluewatermelon@free.fr
+site: 'https://teamsreleases.dearclouds.com/'
+type: Dramas
+Origine: Japon
+tags: Softsub
+genres: Horreur
+message: Lalalalalalala
+

@@ -1,0 +1,34 @@
+enabled: true
+built_in_css: true
+
+providers:
+  Facebook:
+    enabled: false
+    enable_email: false
+    credentials:
+      key:
+      secret:
+
+  Google:
+    enabled: false
+    credentials:
+      key:
+      secret:
+
+  GitHub:
+    enabled: false
+    credentials:
+      key:
+      secret:
+
+  Twitter:
+    enabled: false
+    credentials:
+      key:
+      secret:
+          
+  Linkedin:
+    enabled: false
+    credentials:
+      key:
+      secret:

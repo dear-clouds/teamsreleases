@@ -1,0 +1,20 @@
+title: 'Teams Releases'
+default_lang: fr
+author:
+  name: Mio.
+  email: mio.bluewatermelon@gmail.com
+taxonomies:
+  - category
+  - tag
+  - type
+  - genre
+  - pays
+metadata:
+  description: 'Toutes les sorties vostfr des Fansub !'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog

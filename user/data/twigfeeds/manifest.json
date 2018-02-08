@@ -1,0 +1,278 @@
+{
+    "config": {
+        "user": false,
+        "version": "3.3.0"
+    },
+    "data": {
+        "http:\/\/letempsdunepassion.eklablog.com\/rss\/26976478-accueil\/": {
+            "filename": "a2bf4e1c6208cfdc089b4f84947f91cf.json",
+            "name": "Le Temps Dune Passion Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/teampandafansub.eklablog.fr\/rss\/27031714-projets-en-cours\/": {
+            "filename": "1ec09f16a0f914db09d524cd873eda83.json",
+            "name": "Pan-Da Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/madcatzcrew.crazyfruits.net\/feed\/?f=36": {
+            "filename": "83a3a2ad6ad3bc9ab3a4ec9775729691.json",
+            "name": "MadCatz Crew",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "Wed, 29 Jun 2016 17:17:24 GMT",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/rockgakuenfansub.eklablog.com\/rss\/28852594-accueil\/": {
+            "filename": "ee060530f049b4395664dedf3443e6b7.json",
+            "name": "RockGakuen",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/sakuracreamfansub.eklablog.com\/rss\/28665846-accueil\/": {
+            "filename": "5028e81265e22230b172e3a64b0140de.json",
+            "name": "SakuraCream Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/sixsensesfansub.livejournal.com\/data\/rss": {
+            "filename": "4869e318189f80dc17480ebceeb7a54a.json",
+            "name": "Six Senses Fansub",
+            "amount": 12,
+            "etag": "GgZzJN\/LV8W0Sls47iIgGKrxhQ",
+            "last_modified": "Sun, 28 Jan 2018 20:18:40 GMT",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/skyasia.ek.la\/rss\/27141444-sorties-news\/": {
+            "filename": "8716dc4b7b4c7f638881f89d63456ee5.json",
+            "name": "Sky@sia",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/taohuafansub.eklablog.com\/rss\/29144778-nouvelles-sorties-et-annonces\/": {
+            "filename": "00aca59491b9e4f7869baa61131f9857.json",
+            "name": "TaoHua Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/tokkifansub.eklablog.com\/rss\/26951604-a-lire-avant-d-envoyer-des-mails\/": {
+            "filename": "bebaedffef1d9dac79a2657bb5388c67.json",
+            "name": "Tokki Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/alisandfansub.eklablog.com\/rss\/24556774-accueil\/": {
+            "filename": "74a0a047b6907a1bc6030445e0399350.json",
+            "name": "AliSand Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/teammimifansub.eklablog.com\/rss\/28652230-\/": {
+            "filename": "b095e4767b6f3fdc796db9767eb07d0a.json",
+            "name": "Mimi Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/basha-fansub.eklablog.com\/rss\/21051566-news\/": {
+            "filename": "2e1bdc2fada5f0e2a6db771460745a4b.json",
+            "name": "Basha Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/asiafansub.eklablog.com\/rss\/29338568-accueil\/": {
+            "filename": "0d5e6d84ba8d216db9602fdf91455883.json",
+            "name": "AsiaFanSub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/kichigai-fansub.com\/category\/news\/feed\/": {
+            "filename": "36d37b99da9f29cf903a8087f1e8dc67.json",
+            "name": "KICHIGAI FANSUB",
+            "amount": 12,
+            "etag": "\"b87280de840b9b41d270f6e3bc9a82d5\"",
+            "last_modified": "Fri, 26 Jan 2018 20:46:50 GMT",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/ppalli.eklablog.com\/rss\/27082654-accueil\/": {
+            "filename": "36bc4b52b47238e76c5cc0a4796db6e6.json",
+            "name": "PPALLI FANSUB",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/niniiko-fansub.eklablog.fr\/rss\/27188448-accueil\/": {
+            "filename": "55cad01932d262860a5fe7405b3a5456.json",
+            "name": "NiNiiko Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/meda-fansub.com\/feed\/": {
+            "filename": "92d22c6a3ccc59092181457d708f95ec.json",
+            "name": "Meda-Fansub",
+            "amount": 12,
+            "etag": "\"4bb1e2529467f0a0ac4c3e8ce611cf2b-gzip\"",
+            "last_modified": "Sun, 28 Jan 2018 23:32:24 GMT",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/team.eb.free.fr\/gestion\/rss.php?category=1,4": {
+            "filename": "f26388d65d271643479ec857c7413994.json",
+            "name": "ELECTRIC BLACKNESS",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/miyofansub.eklablog.com\/rss\/": {
+            "filename": "2a103a7d0385a084e931c9ccbabc6f0a.json",
+            "name": "Sa Seum Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/drama-fansub.eklablog.com\/rss\/25771098-sorties\/": {
+            "filename": "1c6471c482ef85216c8157134d6d81fd.json",
+            "name": "Phoenix Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/chan-mokona.livejournal.com\/data\/rss": {
+            "filename": "764c587ad78bc3dd82320532a3990b2a.json",
+            "name": "chan_mokona",
+            "amount": 12,
+            "etag": "GgZzekqemDI45reQRAWo8Mw2tw",
+            "last_modified": "Mon, 25 Dec 2017 12:01:06 GMT",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/haneulsora.eklablog.com\/rss\/19169435-accueil\/": {
+            "filename": "ba9e252113e89eed579185a5ddf155da.json",
+            "name": "Haneul Sora",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/qwentyfansub.eklablog.com\/rss\/22224517-accueil\/": {
+            "filename": "3198745691dabf61600233198118d6a1.json",
+            "name": "Qwenty Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/wangbifansub.eklablog.com\/rss\/": {
+            "filename": "a7851acbf85f8e48eade36df9ab0a124.json",
+            "name": "WangBi Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/hak-kyo-fansub.eklablog.fr\/rss\/23041523-accueil\/": {
+            "filename": "7a5e5acd8f1e5da9f5e3a69c039f7b7d.json",
+            "name": "Hak-kyo Fansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/emi-fansub.eklablog.com\/rss\/24447919-\/": {
+            "filename": "4fa75e0397814d32fac4c5f14740d10c.json",
+            "name": "Emifansub",
+            "amount": 12,
+            "etag": "",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        },
+        "http:\/\/www.drama-jinso-fansub.com\/rss-articles.xml": {
+            "filename": "43d1714d5b0ccdaa8b268992f6716767.json",
+            "name": "Drama Jinso Fansub",
+            "amount": 12,
+            "etag": "\"2279e9bbb99d4d5de6e4bd51807da2980731fbe3\"",
+            "last_modified": "",
+            "cache_time": 900,
+            "last_checked": 1517607108,
+            "last_checked_date": "02-Feb-2018 21:31"
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "title": "MadCatz : Sorties & Annonces",
+    "name": "MadCatz Crew",
+    "etag": "",
+    "last_modified": "Wed, 29 Jun 2016 17:17:24 GMT",
+    "timestamp": 1467220644,
+    "last_checked": 1517607108,
+    "amount": 12,
+    "items": [
+        {
+            "rtl": [
+                "ar",
+                "fa",
+                "ur",
+                "ps",
+                "syr",
+                "dv",
+                "he",
+                "yi"
+            ],
+            "id": "6379a9db6597c364809fcbabe9bb30434c639b1cc744151324f91cad76af4ecf",
+            "title": "Premi\u00e8re sortie !",
+            "url": "http:\/\/madcatzcrew.crazyfruits.net\/t72-premiere-sortie",
+            "author": "Mio.",
+            "date": {
+                "date": "2016-06-29 17:17:24.000000",
+                "timezone_type": 2,
+                "timezone": "GMT"
+            },
+            "publishedDate": {
+                "date": "2016-06-29 17:17:24.000000",
+                "timezone_type": 2,
+                "timezone": "GMT"
+            },
+            "updatedDate": {
+                "date": "2016-06-29 17:17:24.000000",
+                "timezone_type": 2,
+                "timezone": "GMT"
+            },
+            "content": "<p>Hello \u00e0 tous,\n\n\n\nCeci est notre premi\u00e8re sortie officielle \n\nJ&#039;attendais d&#039;avoir un film \u00e0 vous proposer avant d&#039;ouvrir officiellement le forum.\n\n\n\nAvant de vous pr\u00e9senter les sorties je vais vous pr\u00e9senter un peu MadCatz et son concept.\n\n\n\nMadCatz n&#039;est pas une team de Fansub mais un lieu de rassemblement o\u00f9 n&#039;importe qui peut venir, que ce soit pour discuter ou pour proposer des traductions. Il y a aussi tout un coin d\u00e9di\u00e9 aux Teams, o\u00f9 elles peuvent recruter, passer des annonces etc.\n\nIl y  ...<\/p>",
+            "enclosureUrl": "",
+            "enclosureType": "",
+            "language": "fr",
+            "xml": {
+                "title": "Premi\u00e8re sortie !",
+                "link": "http:\/\/madcatzcrew.crazyfruits.net\/t72-premiere-sortie",
+                "guid": "http:\/\/madcatzcrew.crazyfruits.net\/t72-premiere-sortie",
+                "description": "Hello \u00e0 tous,\n\n\n\nCeci est notre premi\u00e8re sortie officielle \n\nJ'attendais d'avoir un film \u00e0 vous proposer avant d'ouvrir officiellement le forum.\n\n\n\nAvant de vous pr\u00e9senter les sorties je vais vous pr\u00e9senter un peu MadCatz et son concept.\n\n\n\nMadCatz n'est pas une team de Fansub mais un lieu de rassemblement o\u00f9 n'importe qui peut venir, que ce soit pour discuter ou pour proposer des traductions. Il y a aussi tout un coin d\u00e9di\u00e9 aux Teams, o\u00f9 elles peuvent recruter, passer des annonces etc.\n\nIl y  ...",
+                "category": "MadCatz : Sorties & Annonces",
+                "pubDate": "Wed, 29 Jun 2016 17:17:24 GMT",
+                "comments": "http:\/\/madcatzcrew.crazyfruits.net\/t72-premiere-sortie#89"
+            },
+            "namespaces": {
+                "dc": "http:\/\/purl.org\/dc\/elements\/1.1\/"
+            }
+        }
+    ]
+}

@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+// Colors
+@import "components/color";
+
+// Variables;
+@import "components/variables";
+
+// Reset
+@import "components/normalize";
+
+@import url('https://fonts.googleapis.com/css?family=Monoton|Montserrat|Nova+Mono|Oswald|Muli');
+
+// components
+@import "components/global";
+@import "components/badges";
+@import "components/icons-material-design";
+@import "components/grid";
+@import "components/navbar";
+@import "components/roboto";
+@import "components/typography";
+@import "components/transitions";
+@import "components/cards";
+@import "components/toast";
+@import "components/tabs";
+@import "components/tooltip";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+@import "components/chips";
+@import "components/materialbox";
+@import "components/forms/forms";
+@import "components/table_of_contents";
+@import "components/sideNav";
+@import "components/preloader";
+@import "components/slider";
+@import "components/carousel";
+@import "components/tapTarget";
+@import "components/pulse";
+@import "components/date_picker/default";
+@import "components/date_picker/default.date";
+@import "components/date_picker/default.time";
+
+.rightcolumn {
+    h3 {
+        font-size: 110%;
+        text-align: center;
+    }
+}
+
+
+.card {
+    z-index: 1;
+
+    h2 {
+      font-size: 115%;
+      margin-top: 5px;
+      padding-left: 5px;
+      font-family: 'Montserrat', sans-serif;
+
+      a {
+          color: $secondary-color;
+      }
+    }
+
+    p {
+        line-height: 100%;
+    }
+
+    .btn-floating.halfway-fab {
+        right: 10px;
+    }
+
+    .btn-floating i {
+        font-size: 110%;
+    }
+}
+
+.top-icon {
+    z-index: 1;
+    position: absolute;
+    left: 45%;
+    margin-top: -17px;
+    color: $primary-color;
+}
+
+// .item-image:after {
+//      content: "?";
+//      font-size: 700%;
+//      margin-left: 36%;
+//      color: grey;
+//      font-family: 'Monoton', cursive;
+// }
+
+.item-image {
+    z-index: 1;
+    position: relative;
+    margin-top: -23px;
+    width: 100%;
+    height: 160px;
+    background: url('../images/no-image.png');
+    background-position: center;
+    background-size: cover;
+    transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    overflow: hidden;
+    top: 0;
+
+            img:first-child  {
+                z-index: 9999999 !important;
+                position: absolute;
+                visibility: visible;
+                width: 100%;
+                height: 160px;
+                top: 0;
+            }
+
+            img:nth-of-type(1)  {
+                z-index: 2;
+                position: absolute;
+                visibility: visible;
+                width: 100%;
+                height: 160px;
+                top: 0;
+            }
+
+}
+
+.item-image:hover {
+    -webkit-filter: grayscale(100%) blur(4px); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) blur(4px);
+    cursor: help;
+}
+
+.item-image p, .item-image a, .item-image img {
+  visibility: hidden;
+}
+
+
+.rssincl-itemdate {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    background: $primary-color;
+    color: white; margin:0;
+    font-size: 80%;
+    font-family: 'Nova Mono', monospace;
+    text-transform: uppercase;
+}
+
+.rssincl-itemfeedtitle {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin-top: -10px; font-size: 12px;
+    padding-left: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.rssincl-itemfeedtitle a {
+    color: #616161;
+}
+
+.blog-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.list-item:last-child {
+    border-bottom: 0;
+}
+
+.list-item {
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 3rem;
+}
+
+.list-item .list-blog-header {
+    position: relative;
+
+        img {
+            width: 100%;
+        }
+}
+
+.list-item .list-blog-date {
+    float: right;
+    text-align: center;
+}
+
+
+.list-item .list-blog-date span {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.list-item .list-blog-date em {
+    display: block;
+    border-top: 1px solid #EEEEEE;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.list-item .list-blog-header h4 {
+    margin-bottom: 0.5rem;
+}
+
+.list-blog-padding {
+    text-align: justify;
+}
+
+
+.teams-image {
+    width: 100%;
+    height: 120px;
+}
+
+.search-image {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}

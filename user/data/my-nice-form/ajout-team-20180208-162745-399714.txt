@@ -1,0 +1,10 @@
+name: Mio
+email: bluewatermelon@free.fr
+nom: lol
+site: 'https://teamsreleases.dearclouds.com/'
+type: Dramas
+Origine: Japon
+tags: Softsub
+genres: null
+message: "Test lalalalala\r\n\r\nProjets :\r\n\r\n- blablabla"
+

@@ -1,0 +1,184 @@
+<div class="list-item h-entry">
+
+    {% set header_image = page.header.header_image|defined(true) %}
+    {% set header_image_width  = page.header.header_image_width|defined(900) %}
+    {% set header_image_height = page.header.header_image_height|defined(300) %}
+    {% set header_image_file = page.header.header_image_file %}
+    {% set titre = page.title %}
+
+    <div class="list-blog-header">
+        <!-- <span class="list-blog-date">
+            <time class="dt-published" datetime="{{ page.date|date("c") }}">
+                <span>{{ page.date|date("d") }}</span>
+                <em>{{ page.date|date("M") }}</em>
+            </time>
+        </span> -->
+        <div class="right">{{ stars(page.route) }}</div>
+        {% if page.header.link %}
+            <h1 class="p-name">
+                {% if page.header.continue_link is not sameas(false) %}
+                <a href="{{ page.url }}"><i class="fa fa-angle-double-right u-url"></i></a>
+                {% endif %}
+                <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
+            </h1>
+        {% else %}
+            <h1 class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h1>
+        {% endif %}
+
+        {% if page.taxonomy.tag %}
+        <span class="tags">
+            {% for tag in page.taxonomy.tag %}
+            <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="chip">{{ tag }}</a>
+            {% endfor %}
+        </span>
+        {% endif %}
+        {% if header_image %}
+            {% if header_image_file %}
+                {% set header_image_media = page.media.images[header_image_file] %}
+            {% else %}
+                {% set header_image_media = page.media.images|first %}
+            {% endif %}
+            {{ header_image_media.cropZoom(header_image_width, header_image_height).classes('img-responsive').html }}
+        {% endif %}
+
+    </div>
+
+    <div class="gap"></div>
+    <div class="list-blog-padding">
+
+<section id="infos-team" class="valign-wrapper">
+        <div class="col s12 m6 l9">
+        <div class="card blue lighten-4">
+            <div class="card-content">
+                {% for category in page.taxonomy.category %}
+
+        <h2 class="valign-wrapper"> <i class="tiny material-icons" style="margin-right: 10px;">favorite_border</i> <a href="{{ blog.url|rtrim('/') }}/category{{ config.system.param_sep }}{{ category }}">{{ category }}</a> </h2>
+{% endfor %}
+
+        {% if page.taxonomy.type %}
+        <p class="types"><strong>Type de traductions :</strong>
+            {% for type in page.taxonomy.type %}
+            <a href="{{ blog.url|rtrim('/') }}/type{{ config.system.param_sep }}{{ type }}">{{ type }}</a> ;
+            {% endfor %}
+        </p>
+        {% endif %}
+
+        {% if page.taxonomy.pays %}
+        <p class="payss"><strong>Origines des traductions :</strong>
+            {% for pays in page.taxonomy.pays %}
+            <a href="{{ blog.url|rtrim('/') }}/pays{{ config.system.param_sep }}{{ pays }}">{{ pays }}</a> ;
+            {% endfor %}
+        </p>
+        {% endif %}
+
+        {% if page.taxonomy.genre %}
+        <p class="genres"><strong>Genres principaux :</strong>
+            {% for genre in page.taxonomy.genre %}
+            <a href="{{ blog.url|rtrim('/') }}/genre{{ config.system.param_sep }}{{ genre }}">{{ genre }}</a> ;
+            {% endfor %}
+        </p>
+        {% endif %}
+    </div>
+</div>
+</div>
+
+<div class="col s12 m6 l3"><a href="{{ page.header.site }}" class="waves-effect waves-light btn" target="_blank"><i class="material-icons left">insert_link</i>Site web</a>
+</div>
+</section>
+
+        <div class="gap clearfix"></div>
+
+    {% if page.header.continue_link is sameas(false) %}
+        <div class="e-content">
+            {{ page.content }}
+        </div>
+        {% if not truncate %}
+        {% set show_prev_next = true %}
+        {% endif %}
+    {% elseif truncate and page.summary != page.content %}
+        <div class="p-summary e-content">
+            {{ page.summary }}
+            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+        </div>
+    {% elseif truncate %}
+        <div class="p-summary e-content">
+
+            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+        </div>
+    {% else %}
+        <div class="e-content">
+            {{ page.content }}
+        </div>
+<div class="gap"></div>
+{% if config.plugins.twigfeeds.enabled %}
+        <!-- <h3>Dernières sorties de la team</h3>
+
+        <div class="row">
+{% for name, feed in twig_feeds if name == '{{ titre }}' %}
+{% for item in feed.items %}
+<div class="col s12 m6 l4 xl3">
+<div class="card">
+<span class="top-icon"><i class="material-icons">terrain</i></span>
+<div class="rssincl-itemdate">{{ item.date.date | date("d M Y (H:i)") }}</div><br>
+<a href="{{ item.url }}" target="_blank"><div class="item-image">{{ item.content }}</div></a>
+ <h2 class="truncate"><i class="tiny material-icons">play_arrow</i><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></h2>
+<div class="rssincl-itemfeedtitle">{{ item.name }}</div>
+</div>
+</div>
+{% endfor %}
+{% endfor %}
+</div> -->
+{% endif %}
+
+<section id="communaute" class="scrollspy">
+
+                <h2>Commentaires</h2>
+
+                <div id="disqus_thread"></div>
+                <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                var disqus_config = function () {
+                this.page.url = '{{ page.route }}';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '{{ page.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://teams-releases.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</section>
+
+
+        {% if config.plugins.relatedpages.enabled and related_pages|length > 0 %}
+    <h3>Teams dans le même genre</h3>
+    {% include 'partials/relatedpages.html.twig' %}
+{% endif %}
+
+
+        {% set show_prev_next = true %}
+    {% endif %}
+
+    {% if show_prev_next %}
+
+        <!-- <p class="prev-next">
+            {% if not page.isFirst %}
+                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> {{ 'BLOG.ITEM.NEXT_POST'|t }}</a>
+            {% endif %}
+
+            {% if not page.isLast %}
+                <a class="button" href="{{ page.prevSibling.url }}">{{ 'BLOG.ITEM.PREV_POST'|t }} <i class="fa fa-chevron-right"></i></a>
+            {% endif %}
+        </p> -->
+    {% endif %}
+
+    </div>
+</div>

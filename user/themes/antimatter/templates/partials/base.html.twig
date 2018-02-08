@@ -1,0 +1,183 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getLanguage ?: 'en' }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    <link href="Https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css', 103) %}
+        {% do assets.addCss('theme://css/materialize.css', 100) %}
+        {% do assets.addCss('theme://css/font-awesome.min.css', 100) %}
+        {% do assets.addCss('theme://css/slidebars.min.css') %}
+
+        {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
+            {% do assets.addCss('theme://css/nucleus-ie10.css') %}
+        {% endif %}
+        {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}
+            {% do assets.addCss('theme://css/nucleus-ie9.css') %}
+            {% do assets.addJs('theme://js/html5shiv-printshiv.min.js') %}
+        {% endif %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 101) %}
+        {% do assets.addJs('theme://js/modernizr.custom.71422.js', 100) %}
+        {% do assets.addJs('theme://js/antimatter.js') %}
+        {% do assets.addJs('theme://js/slidebars.min.js') %}
+        {% do assets.addJs('theme://js/bin/materialize.min.js') %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head %}
+
+<link rel="manifest" href="/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "e9e639c6-2d91-4e49-a536-f24b17bea41b",
+    });
+  });
+</script>
+
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+    <div id="sb-site">
+        {% block header %}
+        <!-- <header id="header">
+            <div id="logo">
+                <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
+            </div>
+            <div id="navbar">
+                {% block header_extra %}{% endblock %}
+                {% if config.plugins.langswitcher.enabled %}
+                {% include 'partials/langswitcher.html.twig' %}
+                {% endif %}
+                {% block header_navigation %}
+                {% include 'partials/navigation.html.twig' %}
+                {% endblock %}
+                <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
+            </div>
+        </header> -->
+
+        <header>
+
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="{{ home_url }}" class="brand-logo center scrollspy" id="top"><img class="responsive-img" src="{{ url('theme://images/logo.png') }}"></a>
+
+                        <a href="#" data-activates="slide-out" class="button-collapse show-on-small"><i class="material-icons">menu</i></a>
+
+
+                        <ul class="hide-on-med-and-down">
+                            <li class="left"><a class="modal-trigger" href="{{ home_url }}/teams">Répertoire Teams</a></li>
+                            <li class="left"><a class="modal-trigger" href="{{ home_url }}/ajouter-une-team">Ajouter une Team</a></li>
+                            <li class="left scrollspy"><a href="#communaute">Communauté</a></li>
+                            <li class="right"><a href="http://team.eb.free.fr" target="_blank">EB TEAM</a></li>
+                            <li class="right"><a href="https://dearclouds.com" target="_blank">Dear Clouds</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+
+
+        </header>
+
+
+        {% endblock %}
+
+<div class="gap"></div>
+
+        {% block showcase %}{% endblock %}
+
+        {% block body %}
+        <section id="body" class="{{ class }} container">
+            {% block content %}{% endblock %}
+        </section>
+        {% endblock %}
+
+        {% block footer %}
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h4 class="white-text">Teams Releases</h4>
+                <p class="grey-text text-lighten-4">Teams Releases est un site indépendant des Teams et ne postera aucun lien de téléchargement (si ce n'est peut-être mes propres traductions) ! Je suis une ancienne Fansubeuse et j'aimerais maintenant aider tout le monde à trouver son bonheur plus facilement. Bonne visite ♥ </p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h4 class="white-text">Liens utiles</h4>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="http://fansub.d-addicts.com" target="_blank">Fansub D-Addict</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://dogaru.fr/" target="_blank">Dogaru</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://interteamsdrama.clicforum.com/" target="_blank">InterTeams</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.dailymanga.org/" target="_blank">Dailymanga</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.animeka.com" target="_blank">Animeka</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright <strong>Teams Releases</strong> - <i>Toutes les ressources utilisées sont open sources</i><br>
+            <a href="https://github.com/Peechaya/teamsreleases" target="_blank" class="grey-text text-lighten-3">
+              Projet sur GitHub <i class="socicon-github"></i></a> <i>Pull requests bienvenus !</i>
+            <a class="grey-text text-lighten-4 right scrollspy" href="#top"><i class="material-icons valign-wrapper">arrow_upward</i> Top</a>
+            </div>
+          </div>
+        </footer>
+
+        {% endblock %}
+    </div>
+    {% block sidebar_navigation %}
+        <div class="sb-slidebar sb-left sb-width-thin">
+            <div id="panel">
+            {% include 'partials/navigation.html.twig' %}
+            </div>
+        </div>
+    {% endblock %}
+    {% block bottom %}
+        {{ assets.js('bottom') }}
+        <script>
+        $(function () {
+            $(document).ready(function() {
+              $.slidebars({
+                hideControlClasses: true,
+                scrollLock: true
+              });
+            });
+        });
+        </script>
+        <script>
+    	$(document).ready(function(){
+    		// the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    		$('.modal').modal();
+    		$('.scrollspy').scrollSpy();
+    		$(".button-collapse").sideNav();
+    	});
+    </script>
+
+    <script type="text/javascript">
+    (sc_adv_out = window.sc_adv_out || []).push({
+    	id : "471414",
+    	domain : "n.ads1-adnow.com"
+    });
+    </script>
+    <script type="text/javascript" src="//st-n.ads1-adnow.com/js/adv_out.js"></script>
+    {% endblock %}
+</body>
+</html>
