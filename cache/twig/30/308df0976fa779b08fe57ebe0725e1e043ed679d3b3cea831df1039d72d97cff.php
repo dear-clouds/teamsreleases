@@ -73,21 +73,22 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
         ";
         // line 108
         $this->displayBlock('body', $context, $blocks);
-        // line 113
+        // line 122
         echo "
         ";
-        // line 114
+        // line 123
         $this->displayBlock('footer', $context, $blocks);
-        // line 145
+        // line 164
         echo "    </div>
     ";
-        // line 146
+        // line 165
         $this->displayBlock('sidebar_navigation', $context, $blocks);
-        // line 153
+        // line 172
         echo "    ";
         $this->displayBlock('bottom', $context, $blocks);
-        // line 182
-        echo "</body>
+        // line 201
+        echo "    <script id=\"dsq-count-scr\" src=\"//teams-releases.disqus.com/count.js\" async></script>
+</body>
 </html>
 ";
     }
@@ -246,10 +247,8 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
             <div class=\"navbar-fixed\">
                 <nav>
                     <div class=\"nav-wrapper\">
-                        <a href=\"";
+                        <a href=\"https://teamsreleases.dearclouds.com\" class=\"brand-logo center scrollspy\" id=\"top\"><img class=\"responsive-img\" src=\"";
         // line 81
-        echo (isset($context["home_url"]) ? $context["home_url"] : null);
-        echo "\" class=\"brand-logo center scrollspy\" id=\"top\"><img class=\"responsive-img\" src=\"";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/logo.png");
         echo "\"></a>
 
@@ -259,11 +258,11 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
                         <ul class=\"hide-on-med-and-down\">
                             <li class=\"left\"><a class=\"modal-trigger\" href=\"";
         // line 87
-        echo (isset($context["home_url"]) ? $context["home_url"] : null);
+        echo (isset($context["base_url"]) ? $context["base_url"] : null);
         echo "/teams\">Répertoire Teams</a></li>
                             <li class=\"left\"><a class=\"modal-trigger\" href=\"";
         // line 88
-        echo (isset($context["home_url"]) ? $context["home_url"] : null);
+        echo (isset($context["base_url"]) ? $context["base_url"] : null);
         echo "/ajouter-une-team\">Ajouter une Team</a></li>
                             <li class=\"left scrollspy\"><a href=\"#communaute\">Communauté</a></li>
                             <li class=\"right\"><a href=\"http://team.eb.free.fr\" target=\"_blank\">EB TEAM</a></li>
@@ -305,32 +304,58 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
     public function block_body($context, array $blocks = array())
     {
         // line 109
-        echo "        <section id=\"body\" class=\"";
+        echo "
+        <ul id=\"slide-out\" class=\"side-nav\">
+          <li><a class=\"waves-effect modal-trigger\" href=\"";
+        // line 111
+        echo (isset($context["base_url"]) ? $context["base_url"] : null);
+        echo "/teams\">Répertoire Teams</a></li>
+          <li><a class=\"waves-effect modal-trigger\" href=\"";
+        // line 112
+        echo (isset($context["base_url"]) ? $context["base_url"] : null);
+        echo "/ajouter-une-team\">Ajouter une Team</a></li>
+          <li><div class=\"divider\"></div></li>
+          <li><a class=\"waves-effect\" href=\"http://team.eb.free.fr\" target=\"_blank\">EB TEAM</a></li>
+          <li><a class=\"waves-effect\" href=\"https://dearclouds.com\" target=\"_blank\">Dear Clouds</a></li>
+        </ul>
+
+        <section id=\"body\" class=\"";
+        // line 118
         echo (isset($context["class"]) ? $context["class"] : null);
         echo " container\">
             ";
-        // line 110
+        // line 119
         $this->displayBlock('content', $context, $blocks);
-        // line 111
+        // line 120
         echo "        </section>
         ";
     }
 
-    // line 110
+    // line 119
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 114
+    // line 123
     public function block_footer($context, array $blocks = array())
     {
-        // line 115
+        // line 124
         echo "        <footer class=\"page-footer\">
           <div class=\"container\">
             <div class=\"row\">
               <div class=\"col l6 s12\">
                 <h4 class=\"white-text\">Teams Releases</h4>
                 <p class=\"grey-text text-lighten-4\">Teams Releases est un site indépendant des Teams et ne postera aucun lien de téléchargement (si ce n'est peut-être mes propres traductions) ! Je suis une ancienne Fansubeuse et j'aimerais maintenant aider tout le monde à trouver son bonheur plus facilement. Bonne visite ♥ </p>
+                <p><script language=\"JavaScript\">var fhs = document.createElement('script');var fhs_id = \"5545233\";
+    \t\t\t\t\t\tvar ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + \" x \" + window.screen.height;
+    \t\t\t\t\t\tfhs.src = \"//freehostedscripts.net/ocounter.php?site=\"+fhs_id+\"&e1=Leecher&e2=Leechers&r=\"+ref+\"&wh=\"+w_h+\"&a=1&pn=\"+pn+\"\";
+    \t\t\t\t\t\tdocument.head.appendChild(fhs);document.write(\"<span id='o_\"+fhs_id+\"'></span>\");
+    \t\t\t\t\t\t</script>
+
+                 <script language=\"JavaScript\">var fhsh = document.createElement('script');var fhs_id_h = \"3292428\";
+    \t\t\t\t\t\tfhsh.src = \"//freehostedscripts.net/ocount.php?site=\"+fhs_id_h+\"&name=Visites&a=1\";
+    \t\t\t\t\t\tdocument.head.appendChild(fhsh);document.write(\"<span id='h_\"+fhs_id_h+\"'></span>\");
+    \t\t\t\t\t\t</script></p>
               </div>
               <div class=\"col l4 offset-l2 s12\">
                 <h4 class=\"white-text\">Liens utiles</h4>
@@ -357,25 +382,25 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
         ";
     }
 
-    // line 146
+    // line 165
     public function block_sidebar_navigation($context, array $blocks = array())
     {
-        // line 147
+        // line 166
         echo "        <div class=\"sb-slidebar sb-left sb-width-thin\">
             <div id=\"panel\">
             ";
-        // line 149
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 149)->display($context);
-        // line 150
+        // line 168
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 168)->display($context);
+        // line 169
         echo "            </div>
         </div>
     ";
     }
 
-    // line 153
+    // line 172
     public function block_bottom($context, array $blocks = array())
     {
-        // line 154
+        // line 173
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
@@ -420,7 +445,7 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
 
     public function getDebugInfo()
     {
-        return array (  379 => 154,  376 => 153,  370 => 150,  368 => 149,  364 => 147,  361 => 146,  328 => 115,  325 => 114,  320 => 110,  315 => 111,  313 => 110,  308 => 109,  305 => 108,  300 => 106,  296 => 71,  293 => 70,  290 => 69,  285 => 65,  266 => 88,  262 => 87,  251 => 81,  240 => 72,  237 => 69,  234 => 68,  231 => 67,  228 => 66,  226 => 65,  218 => 62,  214 => 60,  211 => 59,  207 => 40,  204 => 39,  201 => 38,  198 => 37,  195 => 36,  192 => 35,  189 => 34,  185 => 31,  182 => 30,  179 => 29,  176 => 28,  173 => 27,  170 => 26,  167 => 25,  165 => 24,  162 => 23,  159 => 22,  156 => 21,  153 => 20,  150 => 19,  147 => 18,  139 => 41,  137 => 34,  131 => 32,  129 => 18,  119 => 11,  115 => 10,  112 => 9,  110 => 8,  102 => 7,  99 => 6,  96 => 5,  90 => 182,  87 => 153,  85 => 146,  82 => 145,  80 => 114,  77 => 113,  75 => 108,  72 => 107,  70 => 106,  65 => 103,  63 => 59,  58 => 57,  43 => 44,  41 => 5,  36 => 3,  33 => 2,  31 => 1,);
+        return array (  404 => 173,  401 => 172,  395 => 169,  393 => 168,  389 => 166,  386 => 165,  343 => 124,  340 => 123,  335 => 119,  330 => 120,  328 => 119,  324 => 118,  315 => 112,  311 => 111,  307 => 109,  304 => 108,  299 => 106,  295 => 71,  292 => 70,  289 => 69,  284 => 65,  265 => 88,  261 => 87,  252 => 81,  241 => 72,  238 => 69,  235 => 68,  232 => 67,  229 => 66,  227 => 65,  219 => 62,  215 => 60,  212 => 59,  208 => 40,  205 => 39,  202 => 38,  199 => 37,  196 => 36,  193 => 35,  190 => 34,  186 => 31,  183 => 30,  180 => 29,  177 => 28,  174 => 27,  171 => 26,  168 => 25,  166 => 24,  163 => 23,  160 => 22,  157 => 21,  154 => 20,  151 => 19,  148 => 18,  140 => 41,  138 => 34,  132 => 32,  130 => 18,  120 => 11,  116 => 10,  113 => 9,  111 => 8,  103 => 7,  100 => 6,  97 => 5,  90 => 201,  87 => 172,  85 => 165,  82 => 164,  80 => 123,  77 => 122,  75 => 108,  72 => 107,  70 => 106,  65 => 103,  63 => 59,  58 => 57,  43 => 44,  41 => 5,  36 => 3,  33 => 2,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -513,14 +538,14 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
             <div class=\"navbar-fixed\">
                 <nav>
                     <div class=\"nav-wrapper\">
-                        <a href=\"{{ home_url }}\" class=\"brand-logo center scrollspy\" id=\"top\"><img class=\"responsive-img\" src=\"{{ url('theme://images/logo.png') }}\"></a>
+                        <a href=\"https://teamsreleases.dearclouds.com\" class=\"brand-logo center scrollspy\" id=\"top\"><img class=\"responsive-img\" src=\"{{ url('theme://images/logo.png') }}\"></a>
 
                         <a href=\"#\" data-activates=\"slide-out\" class=\"button-collapse show-on-small\"><i class=\"material-icons\">menu</i></a>
 
 
                         <ul class=\"hide-on-med-and-down\">
-                            <li class=\"left\"><a class=\"modal-trigger\" href=\"{{ home_url }}/teams\">Répertoire Teams</a></li>
-                            <li class=\"left\"><a class=\"modal-trigger\" href=\"{{ home_url }}/ajouter-une-team\">Ajouter une Team</a></li>
+                            <li class=\"left\"><a class=\"modal-trigger\" href=\"{{ base_url }}/teams\">Répertoire Teams</a></li>
+                            <li class=\"left\"><a class=\"modal-trigger\" href=\"{{ base_url }}/ajouter-une-team\">Ajouter une Team</a></li>
                             <li class=\"left scrollspy\"><a href=\"#communaute\">Communauté</a></li>
                             <li class=\"right\"><a href=\"http://team.eb.free.fr\" target=\"_blank\">EB TEAM</a></li>
                             <li class=\"right\"><a href=\"https://dearclouds.com\" target=\"_blank\">Dear Clouds</a></li>
@@ -541,6 +566,15 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
         {% block showcase %}{% endblock %}
 
         {% block body %}
+
+        <ul id=\"slide-out\" class=\"side-nav\">
+          <li><a class=\"waves-effect modal-trigger\" href=\"{{ base_url }}/teams\">Répertoire Teams</a></li>
+          <li><a class=\"waves-effect modal-trigger\" href=\"{{ base_url }}/ajouter-une-team\">Ajouter une Team</a></li>
+          <li><div class=\"divider\"></div></li>
+          <li><a class=\"waves-effect\" href=\"http://team.eb.free.fr\" target=\"_blank\">EB TEAM</a></li>
+          <li><a class=\"waves-effect\" href=\"https://dearclouds.com\" target=\"_blank\">Dear Clouds</a></li>
+        </ul>
+
         <section id=\"body\" class=\"{{ class }} container\">
             {% block content %}{% endblock %}
         </section>
@@ -553,6 +587,16 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
               <div class=\"col l6 s12\">
                 <h4 class=\"white-text\">Teams Releases</h4>
                 <p class=\"grey-text text-lighten-4\">Teams Releases est un site indépendant des Teams et ne postera aucun lien de téléchargement (si ce n'est peut-être mes propres traductions) ! Je suis une ancienne Fansubeuse et j'aimerais maintenant aider tout le monde à trouver son bonheur plus facilement. Bonne visite ♥ </p>
+                <p><script language=\"JavaScript\">var fhs = document.createElement('script');var fhs_id = \"5545233\";
+    \t\t\t\t\t\tvar ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + \" x \" + window.screen.height;
+    \t\t\t\t\t\tfhs.src = \"//freehostedscripts.net/ocounter.php?site=\"+fhs_id+\"&e1=Leecher&e2=Leechers&r=\"+ref+\"&wh=\"+w_h+\"&a=1&pn=\"+pn+\"\";
+    \t\t\t\t\t\tdocument.head.appendChild(fhs);document.write(\"<span id='o_\"+fhs_id+\"'></span>\");
+    \t\t\t\t\t\t</script>
+
+                 <script language=\"JavaScript\">var fhsh = document.createElement('script');var fhs_id_h = \"3292428\";
+    \t\t\t\t\t\tfhsh.src = \"//freehostedscripts.net/ocount.php?site=\"+fhs_id_h+\"&name=Visites&a=1\";
+    \t\t\t\t\t\tdocument.head.appendChild(fhsh);document.write(\"<span id='h_\"+fhs_id_h+\"'></span>\");
+    \t\t\t\t\t\t</script></p>
               </div>
               <div class=\"col l4 offset-l2 s12\">
                 <h4 class=\"white-text\">Liens utiles</h4>
@@ -614,6 +658,7 @@ class __TwigTemplate_81ee777e8237e3223042afcedcdd560a0303be19d4ef4651c43d1b09fad
     </script>
     <script type=\"text/javascript\" src=\"//st-n.ads1-adnow.com/js/adv_out.js\"></script>
     {% endblock %}
+    <script id=\"dsq-count-scr\" src=\"//teams-releases.disqus.com/count.js\" async></script>
 </body>
 </html>
 ", "partials/base.html.twig", "C:\\wamp64\\www\\teamsreleases\\user\\themes\\antimatter\\templates\\partials\\base.html.twig");

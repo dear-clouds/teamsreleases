@@ -40,6 +40,15 @@ form:
             validate:
                 required: true
         -
+            name: banner
+            label: 'Bannière de la team'
+            placeholder: 'Bannière qui représente la team'
+            autofocus: 'on'
+            autocomplete: 'on'
+            type: text
+            validate:
+                required: true
+        -
             name: type
             label: 'Type de projets'
             placeholder: 'Dramas, Films, Animes etc.'

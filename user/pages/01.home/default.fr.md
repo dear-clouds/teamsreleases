@@ -3,6 +3,8 @@ title: Home
 process:
     twig: true
     markdown: false
+twig_first: true
+never_cache_twig: true
 twig_feeds: true
 ---
 
@@ -28,7 +30,7 @@ twig_feeds: true
 {% else %}
     {% set currentPage = 1 %}
 {% endif %}
-{% set perPage = 32 %}
+{% set perPage = 52 %}
 {% set totalPages = (feed_items|length / perPage)|round(0, 'ceil') %}
 {% set start = currentPage * perPage - perPage %}
 {% set paginationLimit = 4 %}
@@ -47,17 +49,17 @@ twig_feeds: true
 
 {% endfor %}
 
-<div class="gap"></div>
+<div class="gap clearfix"></div>
 
 <center>
 {% if totalPages > 1 %}
 <div class="gap"></div>
     <ul class="pagination">
         <li class="page-item {% if currentPage <= 1 %}disabled{% endif %}">
-            <a href="{{ page.url }}/page:{{ 1 }}">Début</a>
+            <a href="{{ base_url }}/page:{{ 1 }}">Début</a>
         </li>
         <li class="page-item {% if currentPage <= 1 %}disabled{% endif %}">
-            <a href="{{ page.url }}/page:{{ currentPage - 1 }}"><i class="tiny material-icons">navigate_before</i></a>
+            <a href="{{ base_url }}/page:{{ currentPage - 1 }}"><i class="tiny material-icons">navigate_before</i></a>
         </li>
         {% for i in 1..totalPages %}
             {% if (currentPage - paginationLimit) - loop.index == 0 %}
@@ -74,15 +76,15 @@ twig_feeds: true
 
             {% else %}
                 <li class="page-item {% if currentPage == loop.index  %} active{% endif %}">
-                    <a href="{{ page.url }}/page:{{ loop.index }}">{{ loop.index }}</a>
+                    <a href="{{ base_url }}/page:{{ loop.index }}">{{ loop.index }}</a>
                 </li>
             {% endif %}
         {% endfor %}
         <li class="page-item {% if currentPage >= totalPages %}disabled{% endif %}">
-            <a href="{{ page.url }}/page:{{ currentPage + 1 }}"> <i class="tiny material-icons">navigate_next</i> </a>
+            <a href="{{ base_url }}/page:{{ currentPage + 1 }}"> <i class="tiny material-icons">navigate_next</i> </a>
         </li>
         <li class="page-item {% if currentPage >= totalPages %}disabled{% endif %}">
-            <a href="{{ page.url }}/page:{{ totalPages }}">Fin</a>
+            <a href="{{ base_url }}/page:{{ totalPages }}">Fin</a>
         </li>
     </ul>
 {% endif %}
@@ -107,6 +109,13 @@ twig_feeds: true
 							<p><small>Si vous souhaitez apparaître ici, merci de m'aider à bien tout harmoniser en postant un titre clair et que la première image de votre article représente votre sortie ! Ce sera plus joli et ça ne change pas trop vos habitudes. Si vous souhaitez aller encore plus loin, vous pouvez afficher sur votre site un de mes <a href="">logos</a> (en création).</small></p>
 						</div>
 					</div>
+                    
+                    {% if config.plugins.simplesearch.enabled %}
+<div class="sidebar-content">
+    <h4>Recherche</h4>
+    {% include 'partials/simplesearch_searchbox.html.twig' %}
+</div>
+{% endif %}
 
 					<h3>Dramas du moment</h3>
 					<div class="card">
@@ -133,6 +142,18 @@ twig_feeds: true
 								<span class="card-title">DramaHolix</span>
 							</div>
 						</div>
+                        
+                        
+                        <p><script language="JavaScript">var fhs = document.createElement('script');var fhs_id = "5545233";
+    						var ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + " x " + window.screen.height;
+    						fhs.src = "//freehostedscripts.net/ocounter.php?site="+fhs_id+"&e1=Leecher&e2=Leechers&r="+ref+"&wh="+w_h+"&a=1&pn="+pn+"";
+    						document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>");
+    						</script><p>
+
+                 			<p><script language="JavaScript">var fhsh = document.createElement('script');var fhs_id_h = "3292428";
+    						fhsh.src = "//freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=Visites&a=1";
+    						document.head.appendChild(fhsh);document.write("<span id='h_"+fhs_id_h+"'></span>");
+    						</script></p>
 
 </div>
 </div>
@@ -141,18 +162,18 @@ twig_feeds: true
 
 				<h2>Communauté</h2>
 
-				<div id="disqus_thread"></div>
+        <div id="disqus_thread"></div>
 				<script>
 
 				/**
 				*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 				*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
+				
 				var disqus_config = function () {
-				this.page.url = '{{ page.route }}';  // Replace PAGE_URL with your page's canonical URL variable
-				this.page.identifier = '{{ page.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				this.page.url = "https://teamsreleases.dearclouds.com";  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 			};
-
+			
 			(function() { // DON'T EDIT BELOW THIS LINE
 			var d = document, s = d.createElement('script');
 			s.src = 'https://teams-releases.disqus.com/embed.js';

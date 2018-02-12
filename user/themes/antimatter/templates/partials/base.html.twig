@@ -10,12 +10,11 @@
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
+    {% block stylesheets %}
     <link href="Https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    {% block stylesheets %}
         {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css', 103) %}
         {% do assets.addCss('theme://css/materialize.css', 100) %}
         {% do assets.addCss('theme://css/font-awesome.min.css', 100) %}
@@ -32,6 +31,9 @@
     {{ assets.css() }}
 
     {% block javascripts %}
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
         {% do assets.addJs('jquery', 101) %}
         {% do assets.addJs('theme://js/modernizr.custom.71422.js', 100) %}
         {% do assets.addJs('theme://js/antimatter.js') %}
@@ -51,6 +53,12 @@
       appId: "e9e639c6-2d91-4e49-a536-f24b17bea41b",
     });
   });
+</script>
+
+<script>
+
+$('img[src="http://asiandrama.eklablog.com/images/share/yahoo!_24.png"]').hide();
+
 </script>
 
 </head>
@@ -78,14 +86,14 @@
             <div class="navbar-fixed">
                 <nav>
                     <div class="nav-wrapper">
-                        <a href="{{ home_url }}" class="brand-logo center scrollspy" id="top"><img class="responsive-img" src="{{ url('theme://images/logo.png') }}"></a>
+                        <a href="https://teamsreleases.dearclouds.com" class="brand-logo center scrollspy" id="top"><img class="responsive-img" src="{{ url('theme://images/logo.png') }}"></a>
 
                         <a href="#" data-activates="slide-out" class="button-collapse show-on-small"><i class="material-icons">menu</i></a>
 
 
                         <ul class="hide-on-med-and-down">
-                            <li class="left"><a class="modal-trigger" href="{{ home_url }}/teams">Répertoire Teams</a></li>
-                            <li class="left"><a class="modal-trigger" href="{{ home_url }}/ajouter-une-team">Ajouter une Team</a></li>
+                            <li class="left"><a class="modal-trigger" href="{{ base_url }}/teams">Répertoire Teams</a></li>
+                            <li class="left"><a class="modal-trigger" href="{{ base_url }}/ajouter-une-team">Ajouter une Team</a></li>
                             <li class="left scrollspy"><a href="#communaute">Communauté</a></li>
                             <li class="right"><a href="http://team.eb.free.fr" target="_blank">EB TEAM</a></li>
                             <li class="right"><a href="https://dearclouds.com" target="_blank">Dear Clouds</a></li>
@@ -106,12 +114,35 @@
         {% block showcase %}{% endblock %}
 
         {% block body %}
+
         <section id="body" class="{{ class }} container">
-            {% block content %}{% endblock %}
+            {% block content %}
+          {% endblock %}
         </section>
         {% endblock %}
 
         {% block footer %}
+
+        <center>
+
+    			<div class="row hide-on-small-only">
+
+    				<div class="col s6 hide-on-small-only">
+    					<!-- Module de parrainage iGraal /!\ NE PAS MODIFIER /!\ --><script type="text/javascript">var IGSponso_S9ces6Qk6ly4xL7y = { igGodfather: 'AG_5576f7bc4b459', init: function() { var self = this; self.igUrl = self.igJsHost + '//fr.igraal.com/parrainage/js/ig.js' + '?f=' + self.igFormat + '&l=' + self.igLinks + '&g=' + self.igGodfather + '&b=' + self.igBn + '&s=' + self.igSize + '&d=' + self.igDivId + '&c=' + self.igCatId + '&i=' + self.igUid + '&h=' + self.igDomain + '&r=' + self.igRand; self.igElem = document.createElement('scr'+'ipt'); self.igElem.setAttribute('type', 'text/javascr' + 'ipt'); self.igElem.setAttribute('src', self.igUrl); self.igOldEvt = window.onload;window.onload = function() {if (self.igOldEvt) self.igOldEvt(); document.body.appendChild(self.igElem); } }, igUid: 'S9ces6Qk6ly4xL7y', igLinks: '383', igFormat: 'img', igBn: '38', igSize: 'd0-1o', igDivId: 'ig-S9ces6Qk6ly4xL7y', igCatId: 'root', igDomain: document.domain, igRand: Math.round((Math.random() * 10000)), igJsHost: (("https:" == document.location.protocol) ? "https:" : "http:"), igUrl: '', igElem: null};IGSponso_S9ces6Qk6ly4xL7y.init();</script><div style="width: 468px; height: 60px; overflow: hidden;"><div id="ig-S9ces6Qk6ly4xL7y"><noscript> Vous devez activer javascript pour afficher ce contenu</noscript></div></div><!-- fin du module de parrainage iGraal-->
+    				</div>
+    				<div class="col s6 hide-on-small-only">
+    					<a href="https://alldebrid.fr/?uid=6rw&lang=fr" target="_blank"><img src="https://cdn.alldebrid.com/lib/images/features.fr.gif"></a>
+    				</div>
+
+    <div class="col s12 hide-on-small-only">
+
+    				<div id="SC_TBlock_471414" class="SC_TBlock">loading...</div>
+    </div>
+
+    			</div>
+
+    		</center>
+
         <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -143,6 +174,15 @@
 
         {% endblock %}
     </div>
+
+    <ul id="slide-out" class="side-nav">
+      <li><a class="waves-effect modal-trigger" href="{{ base_url }}/teams">Répertoire Teams</a></li>
+      <li><a class="waves-effect modal-trigger" href="{{ base_url }}/ajouter-une-team">Ajouter une Team</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="waves-effect" href="http://team.eb.free.fr" target="_blank">EB TEAM</a></li>
+      <li><a class="waves-effect" href="https://dearclouds.com" target="_blank">Dear Clouds</a></li>
+    </ul>
+
     {% block sidebar_navigation %}
         <div class="sb-slidebar sb-left sb-width-thin">
             <div id="panel">
@@ -168,6 +208,7 @@
     		$('.modal').modal();
     		$('.scrollspy').scrollSpy();
     		$(".button-collapse").sideNav();
+
     	});
     </script>
 
@@ -179,5 +220,6 @@
     </script>
     <script type="text/javascript" src="//st-n.ads1-adnow.com/js/adv_out.js"></script>
     {% endblock %}
+    <script id="dsq-count-scr" src="//teams-releases.disqus.com/count.js" async></script>
 </body>
 </html>

@@ -10220,24 +10220,16 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 /* line 113, ../sass/materialize.scss */
 .item-image img:first-child {
-  z-index: 9999999 !important;
-  position: absolute;
-  visibility: visible;
-  width: 100%;
-  height: 160px;
-  top: 0;
-}
-/* line 122, ../sass/materialize.scss */
-.item-image img:nth-of-type(1) {
   z-index: 2;
   position: absolute;
   visibility: visible;
   width: 100%;
   height: 160px;
   top: 0;
+  left: 0;
 }
 
-/* line 133, ../sass/materialize.scss */
+/* line 137, ../sass/materialize.scss */
 .item-image:hover {
   -webkit-filter: grayscale(100%) blur(4px);
   /* Safari 6.0 - 9.0 */
@@ -10245,12 +10237,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   cursor: help;
 }
 
-/* line 139, ../sass/materialize.scss */
-.item-image p, .item-image a, .item-image img {
+/* line 143, ../sass/materialize.scss */
+.item-image p, .item-image a, .item-image html {
   visibility: hidden;
 }
 
-/* line 144, ../sass/materialize.scss */
+/* line 148, ../sass/materialize.scss */
 .rssincl-itemdate {
   z-index: 2;
   position: relative;
@@ -10263,7 +10255,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   text-transform: uppercase;
 }
 
-/* line 155, ../sass/materialize.scss */
+/* line 159, ../sass/materialize.scss */
 .rssincl-itemfeedtitle {
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -10273,44 +10265,44 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   font-family: 'Oswald', sans-serif;
 }
 
-/* line 162, ../sass/materialize.scss */
+/* line 166, ../sass/materialize.scss */
 .rssincl-itemfeedtitle a {
   color: #616161;
 }
 
-/* line 166, ../sass/materialize.scss */
+/* line 170, ../sass/materialize.scss */
 .blog-header {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 171, ../sass/materialize.scss */
+/* line 175, ../sass/materialize.scss */
 .list-item:last-child {
   border-bottom: 0;
 }
 
-/* line 175, ../sass/materialize.scss */
+/* line 179, ../sass/materialize.scss */
 .list-item {
   border-bottom: 1px solid #EEEEEE;
   margin-bottom: 3rem;
 }
 
-/* line 180, ../sass/materialize.scss */
+/* line 184, ../sass/materialize.scss */
 .list-item .list-blog-header {
   position: relative;
 }
-/* line 183, ../sass/materialize.scss */
+/* line 187, ../sass/materialize.scss */
 .list-item .list-blog-header img {
   width: 100%;
 }
 
-/* line 188, ../sass/materialize.scss */
+/* line 192, ../sass/materialize.scss */
 .list-item .list-blog-date {
   float: right;
   text-align: center;
 }
 
-/* line 194, ../sass/materialize.scss */
+/* line 198, ../sass/materialize.scss */
 .list-item .list-blog-date span {
   display: block;
   font-size: 1.75rem;
@@ -10318,7 +10310,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   line-height: 110%;
 }
 
-/* line 201, ../sass/materialize.scss */
+/* line 205, ../sass/materialize.scss */
 .list-item .list-blog-date em {
   display: block;
   border-top: 1px solid #EEEEEE;
@@ -10326,23 +10318,23 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   text-transform: uppercase;
 }
 
-/* line 208, ../sass/materialize.scss */
+/* line 212, ../sass/materialize.scss */
 .list-item .list-blog-header h4 {
   margin-bottom: 0.5rem;
 }
 
-/* line 212, ../sass/materialize.scss */
+/* line 216, ../sass/materialize.scss */
 .list-blog-padding {
   text-align: justify;
 }
 
-/* line 217, ../sass/materialize.scss */
+/* line 221, ../sass/materialize.scss */
 .teams-image {
   width: 100%;
   height: 120px;
 }
 
-/* line 223, ../sass/materialize.scss */
+/* line 227, ../sass/materialize.scss */
 .search-image img {
   width: 100px;
   height: 100px;

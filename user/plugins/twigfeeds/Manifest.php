@@ -263,7 +263,7 @@ class Manifest
                 $feeds[$feed['source']]['name'] = $feed['name'];
             }
             if (isset($feed['type'])) {
-                $feeds[$feed['source']]['type'] = $feed['type'];
+                $feeds[$feed['type']]['type'] = $feed['type'];
             }
             if (isset($feed['start'])) {
                 $start = $feed['start'];

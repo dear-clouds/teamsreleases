@@ -20,7 +20,7 @@
       {% elseif percent >= 50 and percent < 80 %}
         {% set class = 'large' %}
       {% endif %}
-      <span class="{{ class }}" title="{{ value }} posts"><a href="{{ base_url }}/tag{{ config.system.param_sep }}{{ tax|e('url') }}" class="chip">{{ tax }}</a></span>
+      <span class="{{ class }}" title="{{ value }} posts"><a href="{{ base_url }}/teams/tag{{ config.system.param_sep }}{{ tax|e('url') }}" class="chip">{{ tax }}</a></span>
     {% endif %}
   {% endfor %}
 </div>

@@ -1,0 +1,96 @@
+1518730087
+a:2:{s:7:"content";s:4526:"<div class="row">
+<div class="col s12 m12 l10">
+
+
+                                                                                                                                                                        
+
+
+  </div>
+
+
+				<div class="col s12 m4 l2 hide-on-med-and-down rightcolumn">
+
+					<div class="card red lighten-2 white-text">
+						<div class="card-content">
+							<span class="card-title">VERSION BÊTA</span>
+							<p><small>Des bugs peuvent apparaîtrent pendant la phase de transition et des changements peuvent avoir lieu aussi. Pour l'instant, il vaut mieux rester sur la <a href="http://team.eb.free.fr/SORTIES%20VOSTFR.php">version stable</a> mais vous pouvez déjà bookmarker ce site et discuter de vos dramas favoris dans les commentaires tout en bas !</small></p>
+						</div>
+					</div>
+
+					<div class="card amber lighten-5">
+						<div class="card-content">
+							<span class="card-title">Note aux Teams</span>
+							<p><small>Si vous souhaitez apparaître ici, merci de m'aider à bien tout harmoniser en postant un titre clair et que la première image de votre article représente votre sortie ! Ce sera plus joli et ça ne change pas trop vos habitudes. Si vous souhaitez aller encore plus loin, vous pouvez afficher sur votre site un de mes <a href="">logos</a> (en création).</small></p>
+						</div>
+					</div>
+
+					<h3>Dramas du moment</h3>
+					<div class="card">
+						<div class="card-image">
+							<img src="https://78.media.tumblr.com/edd0ef70cdf1429fff63a4f380368c5e/tumblr_o2dx18csTn1twd51do6_r1_250.gif">
+
+							<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://sjdkfansub.wordpress.com/2018/01/08/leh-lub-salub-rarng/" target="_blank"><i class="material-icons">insert_link</i></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title">Leh Lub Salub Rarng</span>
+							<p><small>Petra Pawadee est une actrice célèbre très orgueilleuse et arrogante. Tandis que Ramin, un policier haut gradé, est égocentrique et dragueur.
+								Un jour, ils permutent de corps. La seule manière pour eux de retrouver leur corps est une compréhension mutuelle.</small></p>
+							</div>
+						</div>
+
+						<h3>Team à l'affiche</h3>
+						<div class="card">
+							<div class="card-image">
+								<img src="https://teamsreleases.dearclouds.com/assets/images/team.png">
+
+								<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://dramaholixvip.wordpress.com/" target="_blank"><i class="material-icons">insert_link</i></a>
+							</div>
+							<div class="card-content">
+								<span class="card-title">DramaHolix</span>
+							</div>
+						</div>
+
+</div>
+</div>
+
+<section id="communaute" class="scrollspy">
+
+				<h2>Communauté</h2>
+
+        <div id="disqus_thread"></div>
+				<script>
+
+				/**
+				*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+				/*
+				var disqus_config = function () {
+				this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			*/
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://teams-releases.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</section>
+
+
+	<div class="fixed-action-btn hide-on-small-only">
+		<a class="btn-floating btn-large red">
+			<i class="large material-icons">star</i>
+		</a>
+		<ul>
+			<li><a class="btn-floating grey steam" href="http://steamcommunity.com/id/mio__" target="_blank"><i class="material-icons socicon socicon-steam"></i></a></li>
+			<li><a class="btn-floating red accent-4" href="https://trakt.tv/users/mio_" target="_blank"><i class="material-icons">live_tv</i></a></li>
+			<li><a class="btn-floating green" href="https://ask.fm/DEAR_CLOUDS" target="_blank"><i class="material-icons">email</i></a></li>
+			<li><a class="btn-floating blue twitter" href="https://twitter.com/DEAR_CLOUDS" target="_blank"><i class="material-icons socicon socicon-twitter"></i></a></li>
+		</ul>
+	</div>
+";s:12:"content_meta";N;}
